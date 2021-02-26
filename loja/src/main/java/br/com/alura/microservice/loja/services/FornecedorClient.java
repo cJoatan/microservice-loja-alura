@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
-@FeignClient("fornecedor")
+@FeignClient(value = "fornecedor", path = "fornecedor")
 public interface FornecedorClient {
 
     @RequestMapping("/info/{estado}")

@@ -10,4 +10,4 @@ spring:
         git:
           default-label: main
           uri: https://github.com/cJoatan/alura-microservice-loja
-          search-paths: fornecedor
+          search-paths: fornecedor, loja, transportador

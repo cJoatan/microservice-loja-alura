@@ -1,0 +1,46 @@
+
+server:
+  port: 5555
+
+spring:
+  application:
+    name: 'gateway-service'
+
+#  cloud:
+#    gateway:
+#      actuator:
+#        verbose:
+#          enabled: true
+
+  cloud:
+    gateway:
+
+      routes:
+        - id: loja-service
+          uri: lb://LOJA/
+#          uri: http://localhost:8080/
+          predicates:
+            - Path=/loja/**
+
+        - id: fornecedor-service
+          uri: lb://FORNECEDOR/
+          #          uri: http://localhost:8080/
+          predicates:
+            - Path=/fornecedor/**
+
+management:
+  endpoint:
+    gateway:
+      enabled: true
+
+  endpoints:
+    web:
+      exposure:
+        include: "gateway"
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka

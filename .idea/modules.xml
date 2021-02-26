@@ -3,10 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/alura-micro-service-loja.iml" filepath="$PROJECT_DIR$/.idea/alura-micro-service-loja.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auth/auth.iml" filepath="$PROJECT_DIR$/auth/auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-servcer/config-servcer.iml" filepath="$PROJECT_DIR$/config-servcer/config-servcer.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/fornecedor/fornecedor.iml" filepath="$PROJECT_DIR$/fornecedor/fornecedor.iml" />
       <module fileurl="file://$PROJECT_DIR$/loja/loja.iml" filepath="$PROJECT_DIR$/loja/loja.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transportador/transportador.iml" filepath="$PROJECT_DIR$/transportador/transportador.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul/zuul.iml" filepath="$PROJECT_DIR$/zuul/zuul.iml" />
     </modules>
   </component>
 </project>
